@@ -1,22 +1,23 @@
-# OSS Capstone Audit: Mozilla Firefox
+OSS Capstone Audit: Mozilla Firefox
 
-This repository contains a comprehensive technical audit of **Mozilla Firefox** conducted within an Open Source environment. The project validates the transparency, security, and integrity of the software using automated Linux-based shell scripts.
+This project presents a detailed technical audit of Mozilla Firefox, performed in an open-source environment. The objective is to evaluate system transparency, security posture, and software integrity through a set of automated Linux shell scripts.
 
-## 📂 Project Structure
-* **/report**: Contains the final 16-page technical audit report (PDF).
-* **/scripts**: Contains the Bash (.sh) scripts used for automated verification:
-    * `system_identity.sh`: Verifies OS and Kernel versions.
-    * `package_inspector.sh`: Checks for Firefox installation status.
-    * `disk_auditor.sh`: Audits file permissions and storage.
-    * `log_analyzer.sh`: Previews system logs for environment health.
-    * `manifesto_gen.sh`: Generates a digital audit certificate.
+📁 Repository Overview
+/report
+Includes the finalized 16-page audit report in PDF format.
+/scripts
+A collection of Bash scripts used to perform automated checks and validations:
+system_identity.sh – Retrieves and verifies operating system and kernel details
+package_inspector.sh – Confirms Firefox installation and package information
+disk_auditor.sh – Examines storage usage and file permission settings
+log_analyzer.sh – Reviews system logs to assess environment stability
+manifesto_gen.sh – Produces a digital audit certificate summarizing findings
+🧰 Tech Stack
+Operating System: Ubuntu 24.04.4 LTS (running on WSL2)
+Scripting Language: Bash
+Audit Subject: Mozilla Firefox (licensed under MPL 2.0)
+▶️ Execution Guide
 
-## 🛠️ Technology Stack
-* **OS**: Ubuntu 24.04.4 LTS (via WSL2)
-* **Language**: Bash (Shell Scripting)
-* **Audit Target**: Mozilla Firefox (MPL 2.0 License)
+To reproduce the audit process, execute the scripts within your Ubuntu terminal environment. For example:
 
-## 🚀 How to Run the Scripts
-To replicate this audit, run the scripts in your Ubuntu terminal:
-```bash
 bash scripts/system_identity.sh
